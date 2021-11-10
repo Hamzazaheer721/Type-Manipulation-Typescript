@@ -19,6 +19,7 @@ const handlePersonInformation = (
   _obj[key] = value
 }
 
+console.info(handlePersonInformation("age", "45"))
 console.log(makeIterator("age","25").next())
 console.log(makeIterator("city","lahore").next())
 console.log(makeIterator("company","grafdom").next())
