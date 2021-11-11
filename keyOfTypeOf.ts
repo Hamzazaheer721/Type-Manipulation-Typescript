@@ -4,11 +4,9 @@ interface newType{
   finish: number
 }
 
-
 interface myCustomType {
   begin: keyof newType
 }
-
 
 const variable: myCustomType = {
   begin: "start"
