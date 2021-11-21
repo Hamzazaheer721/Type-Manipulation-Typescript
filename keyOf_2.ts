@@ -1,4 +1,4 @@
-interface googleType{
+interface googleType {
   lat: number
   lng: number
 }
@@ -8,15 +8,15 @@ interface IType {
 }
 
 const _var: IType = {
-  type: "lat" 
+  type: "lat"
 }
 
 console.log(_var) //{type: "lat"}
 
-type ICustomType<T> = {[ P in keyof T]: true}
+type ICustomType<T> = { [P in keyof T]: true }
 
-const __var : ICustomType<typeof _var> = {
-  type: true  // only true, false will give error
+const __var: ICustomType<typeof _var> = {
+  type: true // only true, false will give error
 }
 
-console.log(__var)  // {type : true}
+console.log(__var) // {type : true}
