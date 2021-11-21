@@ -6,3 +6,16 @@ for (let n of numbers) {
 }
 
 console.log("Sum: ", sum)
+// Sum: 15
+
+// we could do the same thing with array.reduce 
+
+const callback = (accumulator, currentValue) => {
+  return accumulator + currentValue
+}
+
+sum = numbers.reduce(callback, 0);
+
+console.log("Updated Sum :", sum)
+
+// Updated Sum : 15
