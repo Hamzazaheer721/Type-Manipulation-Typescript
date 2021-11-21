@@ -1,3 +1,6 @@
+// Object entries returns an array of given object's own enumerable 
+// string-keyed property [key, value] pairs
+
 const ICustomObj = {
   name:  "Hamza",
   age: 21,
