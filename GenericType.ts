@@ -13,11 +13,11 @@ type ICustomType <T, K extends keyof T, U> =  Omit <T, K> & Partial<Pick<T,K>> &
 type ICountry = ICustomType<ICountryWithCheckbox, "description", {hours:string}> 
 
 const _obj : ICountry = {
-  country: "hey",
+  country: "Pakistan",
   city: "Lahore",
-  description: "asdasd",
-  continent: "hey",
-  hours: "wow"
+  description: "Lahore is cultural city",
+  continent: "Asia",
+  hours: "12 hours"
 }
 
 console.log(_obj)
