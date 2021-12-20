@@ -1,8 +1,7 @@
 // in js, the symbol data type is referred to as symbol value,
 // the symbol value in js runtime env, is created by invoking a Symbol method.
 // This Symbol method will dynamically generate an anonymous, unique value.
-// A Symbol can be used as object property
-
+// A Symbol can be used as object property.
 
 let _val: Symbol = Symbol("val")
 
